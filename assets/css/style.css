@@ -1,0 +1,22 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+a{
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    color: #fff;
+    background-color: var(--color-info);
+    border-radius: 1rem;
+    font-size: 1.15rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+a:hover{
+    transform: scale(1.1);
+}
