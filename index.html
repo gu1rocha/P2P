@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2P</title>
+
+    <!-- <link href="./assets/img/favicon.png" rel="icon"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./assets/css/inicialize.css">
+
+    <script src="./assets/js/uteis.js"></script>
+
+    <!-- <link rel="stylesheet" href="./nav/nav.css">
+    <script src="./nav/nav.js" defer></script>
+
+    <link rel="stylesheet" href="./menu/assets/css/style.css">
+    <script src="./menu/assets/js/script.js" defer></script>
+
+    <link rel="stylesheet" href="./loading/assets/css/style.css">
+    <script src="./loading/assets/js/script.js"></script> -->
+
+    <script src="./assets/js/script.js" defer></script>
+</head>
+<body>
+    <nav></nav>
+    <header></header>
+    <main>
+        <div class="box_simulador">
+            <div class="box_simulador_calculo">
+                <div class="box_grid">
+                    <div class="box_valor">
+                        <h2>Valor</h2>
+                        <h1 class="valor_range"></h1>
+                    </div>
+                    <input type="range" name="" id="range_valor" step="5000" min="10000" max="100000" value="20000" class="range blue" oninput="atualizar_valor(this.value)">
+                </div>
+                <div class="box_grid">
+                    <div class="box_valor">
+                        <h2>Prazo</h2>
+                        <h1 class="prazo_range"></h1>
+                    </div>
+                    <input type="range" name="" id="range_prazo" step="2" min="6" max="24" value="18" class="range blue" oninput="atualizar_prazo(this.value)">
+                </div>
+                <div class="box_grid select">
+                    <select name="" id="" class="taxa_mensal" oninput="atualizar_parcela()">
+                        <option value="2.49">2,49% a.m</option>
+                        <option value="2.79">2,79% a.m</option>
+                        <option value="2.99">2,99% a.m</option>
+                        <option value="3.09">3,09% a.m</option>
+                        <option value="3.69">3,69% a.m</option>
+                        <option value="3.69">3,69% a.m</option>
+                        <option value="5.29">5,29% a.m</option>
+                    </select>
+                    <span class="material-symbols-sharp">expand_more</span>
+                </div>
+                <div class="box_result_simulador">
+                    <div class="result_parcela"><h1></h1></div>
+                    <div class="valor_result">
+                        <h2>R$</h2>
+                        <h1></h1>
+                    </div>
+                </div>
+            </div>
+        <!-- <div class="container">
+            <div class="box">
+              <div class="box-emprestimos">
+                <div class="dados">
+                  <div class="item">
+                    <div class="valores">
+                      <label for="">Valor</label>
+                      <h3>R$ <span id="campo-valor-emprestimo">10.000,00</span></h3>
+                    </div>
+                    <div id="slider-valor-emprestimo" class="slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-min" style="width: 3.9039%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 3.9039%;"></span></div>
+        
+                    <input type="hidden" id="js-input-valor-emprestimo" value="20000">
+                  </div>
+                  <div class="item">
+                    <div class="valores">
+                      <label for="">Prazo</label>
+                      <h3><span id="campo-prazo-emprestimo">24</span> x</h3>
+                    </div>
+                    <div id="slider-prazo-emprestimo" class="slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                      <div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-min"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 80%;"></span></div>
+        
+                    <input type="hidden" id="js-input-prazo-emprestimo" value="30">
+                  </div>
+                  <div class="item">
+                    <div class="select-custom">
+                      <input type="hidden" id="js-input-taxa-emprestimo" value="0.0130">
+                      <div class="item-selected js-open-taxa">
+                        <span><strong>2,49%</strong> <span>a.m</span></span>
+                        <img alt="arrow" class=" lazyloaded" src="https://iouu.com.br/hubfs/raw_assets/public/IOUU_November2020/images/arrow-select.svg">
+                      </div>
+                      
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="resultado">
+                  <div class="input">
+                    <div class="arrow">
+                      <img alt="arrow" class=" lazyloaded" src="https://iouu.com.br/hubfs/raw_assets/public/IOUU_November2020/images/arrow-select-blue.svg">
+                    </div>
+                    <div class="parcela">
+                      <span>R$</span>
+                      <div class="info">
+                        <p><span id="parcelado">24</span>x de</p>
+                        <h2 id="result-formula-emprestimo">975,44</h2>
+                      </div>
+                    </div>
+                    <p>*O valor máximo do empréstimo, o número de parcelas e a taxa de juros estão sujeitos à variação em função da pré-aprovação do mesmo.</p>
+                  </div>
+                  <a href="https://onboarding.iouu.com.br/">Quero empréstimo 
+                    <img alt="arrow" class=" lazyloaded" src="https://iouu.com.br/hubfs/raw_assets/public/IOUU_November2020/images/arrow-white-btnn.svg">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+    </main>
+    <footer></footer>
+</body>
+</html>
